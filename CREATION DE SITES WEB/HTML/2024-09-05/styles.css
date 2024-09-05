@@ -1,0 +1,24 @@
+.texteVert {
+    color: green;
+}
+
+.bluetext{
+    color: blue;
+}
+.smallwidth {
+    width: 200px;
+    border: 2px solid red;
+    background-color: azure;
+}
+#succursale li{ 
+    color: red; /* when i do "#succursale li", i tell the document to colour red any "li" item inside the "id" "succursale"*/
+}
+li {
+    color: green;
+}
+#paragraphedeliste {
+    font-style: italic;
+}
+li ul ol {
+    color: aliceblue;
+}
