@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+h1 {
+    text-align: center;
+    color: red;
+  }
+h2{
+    text-decoration: underline;
+}
+h3{
+    text-decoration: underline;
+}
+#petite_section{
+    color: blue;
+}
