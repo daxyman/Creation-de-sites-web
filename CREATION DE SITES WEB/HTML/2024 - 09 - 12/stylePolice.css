@@ -1,0 +1,12 @@
+#p1{
+    font-size: 0.8em;
+}
+
+#p2{
+    font-size: 1em;
+    font-style: italic;
+    text-decoration: underline red wavy;
+
+    text-decoration-line: gray;
+    text-decoration-color: wheat;
+}
