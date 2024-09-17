@@ -1,0 +1,38 @@
+table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px black solid;
+    border-color: blue;
+}
+td:first-child{
+    background-color: cyan;
+}
+td:first-child + td{
+    background-color: #de941d;
+}
+td:first-child + td + td{
+    background-color: #48f930;
+}
+
+
+td:first-child, th:first-child{
+    background-color: none;
+}
+
+
+tr:nth-child(even){
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: bisque;
+}
+tr:nth-child(odd){
+    font-style: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: maroon;
+}
+
+tr:nth-child(){
+    background-color: red;
+}
