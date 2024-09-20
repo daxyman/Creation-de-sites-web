@@ -1,0 +1,55 @@
+table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px black solid;
+    border-color: black;
+}
+td:first-child{
+    background-color: none; /* this changes the color of the first column but excludes the title */
+}
+td:first-child + td{
+    background-color: none; /* this changes the color of the second column but excludes the title */
+}
+td:first-child + td + td{
+    background-color: none; /*this changes the color of the third column but excludes the title */
+}
+
+caption {
+    caption-side: bottom;
+    font-style: italic; /* text on the bottom (it's normally on top)*/
+    color: darkblue;
+}
+#polices{
+
+}
+#image1{
+    width: 30px;
+}
+
+
+td:first-child, th:first-child{
+    background-color: none; /* this changes the color of the whole first column */
+}
+
+tr:nth-child(even){ /*this alters every ROW that's even */
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: black; /* this changes the color of the font without the background */
+    background-color: yellow;
+}
+tr:nth-child(odd){ /*this alters every ROW that's odd */
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: green;
+}
+tr:first-child{
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+tr:nth-child(){ /*blank to test every nth amount of rows*/
+    background-color: red;
+}
