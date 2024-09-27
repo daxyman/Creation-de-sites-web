@@ -1,0 +1,16 @@
+h2 {
+    background-color: #f27ccb;
+    margin: 0;
+    padding: 0.5rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    }
+    .special-heading {
+    background-color: #7cf2a3;
+    position: relative;
+    padding-top: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    }

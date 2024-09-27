@@ -1,0 +1,31 @@
+header{
+    left: 25px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 45px;
+}
+
+nav{
+    border: solid 3px green;
+    }               
+
+section{
+    border: solid 3px yellow;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+
+
+    footer{
+        border: solid 3px pink;
+    }
+
+#element1{
+    border: solid;
+    background-color: #0ff;
+}
+#fb{
+    margin-right: 70px;
+    width: 1px;
+    height: 1px;
+}

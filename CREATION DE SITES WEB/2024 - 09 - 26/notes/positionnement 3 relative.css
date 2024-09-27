@@ -1,0 +1,43 @@
+header{
+    left: 25px;
+    position: relative;
+    margin-left: 400px;
+    margin-top: 45px;
+    width: 75%;
+    left: 25px;
+    margin: auto;
+}
+nav{
+    border-style: solid;
+    border-color: #4800ff;
+    width: 250px;
+    position: relative;
+    top: 220px;
+    left: 50px;
+    padding: 15px;
+    margin-bottom: 40px;
+    width: 60%;
+}
+section{
+    border-style: solid;
+    border-color: #f00;
+    position: relative; 
+    top: 470px;
+    left: 75px;
+}
+footer{
+    border-style: solid;
+    border-color: #f00;
+    position: relative;
+    top: 735px;
+    left: 100px;
+}
+#element1{
+    border: solid;
+    background-color: #0ff;
+}
+strong{
+    position: relative;
+    top: 20px;
+    right: 300px;
+}

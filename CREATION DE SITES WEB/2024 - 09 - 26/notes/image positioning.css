@@ -1,0 +1,27 @@
+header{
+    border: solid 40px blue;
+    margin: auto;
+}
+
+nav{
+    border: solid 3px green;
+    }               
+
+section{
+    border: solid 3px yellow;
+}
+
+
+    footer{
+        border: solid 3px pink;
+    }
+
+#element1{
+    border: solid;
+}
+#fb{
+    height: 40px;
+    width: 40px;
+    float: right;
+    position: relative;
+}

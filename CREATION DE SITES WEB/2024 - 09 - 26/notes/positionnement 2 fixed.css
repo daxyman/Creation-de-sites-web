@@ -1,0 +1,32 @@
+header{
+    left: 25px;
+    position: fixed;
+    margin-left: 400px;
+    margin-top: 45px;
+}
+nav{
+    border-style: solid;
+    border-color: #4800ff;
+    width: 250px;
+    position: fixed; /* stays on the screen in the same position no matter what, like a chatbot or team support*/
+    top: 220px;
+    left: 50px;
+}
+section{
+    border-style: solid;
+    border-color: #f00;
+    position: fixed;  /* hovers over, wont change position*/
+    top: 470px;
+    left: 75px;
+}
+footer{
+    border-style: solid;
+    border-color: #f00;
+    position: fixed;
+    top: 735px;
+    left: 100px;
+}
+#element1{
+    border: solid;
+    background-color: #0ff;
+}
