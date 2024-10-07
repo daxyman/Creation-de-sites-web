@@ -1,0 +1,23 @@
+.flex-container{
+    min-width: fit-content;
+}
+.title-container{
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: fit-content;
+    background-color: #f9f9f9;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.form-container {
+    border: 2px solid #ccc; /* Gray border */
+    padding: 20px; /* Space between the content and the border */
+    background-color: #f9f9f9; /* Light background color */
+    max-width: fit-content; /* Adjust the width as needed */
+    border-radius: 10px; /* Rounded corners */
+    margin: 0 auto; /* Center the form on the page */
+    height: 500px;
+    line-height: 2.8;
+  }
