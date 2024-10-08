@@ -18,6 +18,6 @@
     max-width: fit-content; /* Adjust the width as needed */
     border-radius: 10px; /* Rounded corners */
     margin: 0 auto; /* Center the form on the page */
-    height: 500px;
-    line-height: 2.8;
+    height: fit-content;
+    line-height: 3;
   }
