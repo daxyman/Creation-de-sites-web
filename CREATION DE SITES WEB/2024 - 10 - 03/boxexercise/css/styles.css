@@ -1,23 +1,24 @@
 .flex-container{
-    min-width: fit-content;
+
 }
 .title-container{
     text-align: center;
-    background-color: #ffffff;
+    background-color: #a7d7e4;
     border-radius: 10px;
-    max-width: fit-content;
-    background-color: #f9f9f9;
+    max-width: 531px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 140%;
+    margin-bottom: 40px;
     
 }
 .form-container {
-    border: 2px solid #ccc; /* Gray border */
+    border: 0px  #ffeace; /* Gray border */
     padding: 20px; /* Space between the content and the border */
-    background-color: #f9f9f9; /* Light background color */
-    max-width: fit-content; /* Adjust the width as needed */
+    background-color: #ffeace; /* Light background color */
+    width: 491px; /* Adjust the width as needed */
     border-radius: 10px; /* Rounded corners */
     margin: 0 auto; /* Center the form on the page */
-    height: 500px;
+    height: fit-content;
     line-height: 2.8;
   }
