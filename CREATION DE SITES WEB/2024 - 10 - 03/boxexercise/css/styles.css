@@ -20,9 +20,5 @@
     border-radius: 10px; /* Rounded corners */
     margin: 0 auto; /* Center the form on the page */
     height: fit-content;
-<<<<<<< HEAD
     line-height: 2.8;
-=======
-    line-height: 3;
->>>>>>> 62f7b0fba7586abc759684586b41b22ef8553dd7
   }
