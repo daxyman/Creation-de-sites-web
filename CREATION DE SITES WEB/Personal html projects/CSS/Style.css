@@ -1,0 +1,32 @@
+body {
+    background-color: #EDEBE6;
+}
+
+.container {
+    margin: 0; /* Remove margin from container if needed */
+    padding: 10px; /* Optional: Add padding to the container */
+}
+
+.code {
+    background-color: #2b2b2b; /* Dark grey instead of black for readability */
+    color: #faf9f6;
+    padding: 15px; /* Keep padding for readability */
+    margin: 0 auto; /* Center the code block */
+    max-width: fit-content; /* Make the code block wrap around the content */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Ensure the code block fits around its content */
+}
+
+pre {
+    margin: 0; /* Remove margin from <pre> */
+    white-space: pre-wrap; /* Preserve formatting and allow wrapping */
+    overflow-wrap: break-word; /* Ensure long lines break appropriately */
+}
+
+code {
+    display: block; /* Ensure code block is displayed correctly */
+}
+.special-code{
+    background-color: rgba(255, 78, 78, 0.719);
+    max-width: none;
+}
