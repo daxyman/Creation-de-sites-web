@@ -7,16 +7,38 @@
     <title>Basic Structure</title>
     <link rel="stylesheet" href="/CREATION DE SITES WEB/Personal html projects/CSS/Style.css">
 </head>
-<h1>
-    Basic Structure
-</h1>
+<table class="center"></table>
+    <tr id="middle">
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Main-page.html" target="_self" rel="noopener noreferrer">Main page</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Basic-Structure.html" target="_self" rel="noopener noreferrer">Basic Structure</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/TextElements.html" target="_self" rel="noopener noreferrer">Text Elements</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Links&Media.html" target="_self" rel="noopener noreferrer">Links & Media</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Lists.html" target="_self" rel="noopener noreferrer">Lists</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Tables.html" target="_self" rel="noopener noreferrer">Tables</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Forms.html" target="_self" rel="noopener noreferrer">Forms</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Attributes.html" target="_self" rel="noopener noreferrer">Attributes</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Scripting.html" target="_self" rel="noopener noreferrer">Scripting</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Semantic-Elements.html" target="_self" rel="noopener noreferrer">Semantic Elements</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Multimedia.html" target="_self" rel="noopener noreferrer">Multimedia</a></td>
+        <td><a href="/CREATION DE SITES WEB/Personal html projects/HTML/Meta-Tags.html" target="_self" rel="noopener noreferrer">Meta tags</a></td>
+    </tr>
+</table>
+
+<div class="title">
+    <h1>Basic Structure</h1>
+</div>
 
     <div class="container">
-    <dl><h4>html</h4></dl>
-        <dt>The &lt;HTML&gt; tag represents the root of an HTML document.</dt>
-        <dt>The &lt;HTML&gt; tag is the container for all other HTML elements (except for the &lt;DOCTYPE&gt; tag).</dt>
-        <dt>Note: You should always include the lang attribute inside the &lt;HTML&gt; tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</dt>
-        <dt>Here: a very basic example of an hmtl website</dt>    
+    <div class="subtitle">
+        <dl><h4>html</h4></dl>
+    </div>
+        
+        <div class="Description">
+            <dt>The &lt;HTML&gt; tag represents the root of an HTML document.</dt>
+            <dt>The &lt;HTML&gt; tag is the container for all other HTML elements (except for the &lt;DOCTYPE&gt; tag).</dt>
+            <dt>Note: You should always include the lang attribute inside the &lt;HTML&gt; tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</dt>
+            <dt>Here: a very basic example of an hmtl website</dt>
+        </div>
 
             <div class="code">
                 <pre><code>
@@ -33,13 +55,16 @@
     </div>
 
     <div class="container">
-    <dl><h4>head</h4></dl>
-        <dt>The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.</dt>
-        <dt>Metadata is data about the HTML document. Metadata is not displayed.</dt>
-        <dt>Metadata typically define the document title, character set, styles, scripts, and other meta information.</dt>
-        <dt>The following elements can go inside the &lt;head&gt; element:</dt>
-        <dt>the previous example also contained the &lt;head&gt; tag, here I just make it more obvious</dt>
-            
+    <div class="subtitle">
+        <dl><h4>head</h4></dl>
+    </div>
+        <div class="Description">
+            <dt>The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.</dt>
+            <dt>Metadata is data about the HTML document. Metadata is not displayed.</dt>
+            <dt>Metadata typically define the document title, character set, styles, scripts, and other meta information.</dt>
+            <dt>The following elements can go inside the &lt;head&gt; element:</dt>
+            <dt>the previous example also contained the &lt;head&gt; tag, here I just make it more obvious</dt>
+        </div>
             <div class="code">
                 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -57,49 +82,98 @@
 
 
     <div class="container">
-        <dl><h4>body</h4></dl>
-        <dt>The &lt;body&gt; tag defines the document's body.
-            The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
-        
-            Note: There can only be one &lt;body&gt; element in an HTML document.</dt>
-
+        <div class="subtitle">
+            <dl><h4>body</h4></dl>
+        </div>
+        <div class="Description">
+            <dt>The &lt;body&gt; tag defines the document's body.</dt>
+            <dt>The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</dt>
+            <dt>Note: There can only be one &lt;body&gt; element in an HTML document.</dt>
+        </div>  
+            <div class="code">
             <pre><code>
 &lt;html&gt;
 &lt;head&gt;
-  &lt;title&gt;Title of the document&lt;/title&gt;
+    &lt;title&gt;Title of the document&lt;/title&gt;
 &lt;/head&gt;
-
-&lt;body&gt;
-  &lt;h1&gt;This is a heading&lt;/h1&gt;
-  &lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
+<div class="special-code"> &lt;body&gt;</div> <!--obligatory space-->&lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+<div class="special-code">&lt;/body&gt;</div> <!--obligatory space--> &lt;/html&gt;
             </code></pre>
-    </div>
+            </div>
+            </div>
 
 
     <div class="container">
-        <dl><h4>doctype</h4></dl>
-        <dt>All HTML documents must start with a &lt;DOCTYPE&gt; declaration.
-            The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
-        
-            In HTML 5, the declaration is simple:</dt>
+        <div class="subtitle">
+            <dl><h4>doctype</h4></dl>
+        </div>
+        <dt>All HTML documents must start with a &lt;!DOCTYPE&gt; declaration.</dt>  
+        <dt>The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.</dt>  
+        <dt>In HTML 5, the declaration is simple:</dt>  
+        <div class="code">
+            <pre><code>
+<div class="special-code">&lt;!DOCTYPE html&gt;</div> <!--obligatory space--> &lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title of the document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+The content of the document......
+/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </div>    
     </div>
 
+    <div class="container">
+        <div class="subtitle">
+            <dl><h4>meta</h4></dl>
+        </div>
+        <div class="description">
+            <dt>The &lt;meta&gt; tag defines metadata about an HTML document. Metadata is data (information) about data.</dt>
+            <dt>&lt;meta&gt; tags always go inside the &lt;head&gt; element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.</dt>
+            <dt>Metadat9a will not be displayed on the page, but is machine parsable.</dt>
+            <dt>Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.</dt>
+            <dt>There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the &lt;meta&gt; tag (See "Setting The Viewport" example below).</dt>
+        </div>
+        <div class="code">
+            <pre><code>
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;<!--obligatory space--> <div class="special-code">  &lt;meta name=&quot;description&quot; content=&quot;Free Web tutorials&quot;&gt;
+  &lt;meta name=&quot;keywords&quot; content=&quot;HTML, CSS, JavaScript&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;John Doe&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</div>
+&lt;/head&gt;
+            </code></pre>
+        </div>
+    </div>
 
-        <dl><h4>meta</h4></dl>
-    <dt>The &lt;meta&gt; tag defines metadata about an HTML document. Metadata is data (information) about data.
-
-        &lt;meta&gt; tags always go inside the &lt;head&gt; element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
-        
-        Metadata will not be displayed on the page, but is machine parsable.
-        
-        Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.</dt>
-
-
-        <dl><h4>title</h4></dl>
-    <dt></dt>
+    <div class="container">
+        <div class="subtitle">
+            <dl><h4>title</h4></dl>
+        </div>
+        <div class="description">
+            <dt>The &lt;title&gt; tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</dt> 
+            <dt>The &lt;title&gt; tag is required in HTML documents!</dt> 
+            <dt>The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.</dt> 
+            <br>
+            <dt>The &lt;title&gt; element:</dt> 
+            <br>
+            <dt> defines a title in the browser toolbar</dt>
+            <dt> provides a title for the page when it is added to favorites</dt>
+            <dt> displays a title for the page in search-engine results</dt> 
+            <br>
+            <dt>Here are some tips for creating good titles:</dt> 
+            <br>
+            <dt> Go for a longer, descriptive title (avoid one- or two-word titles)</dt> 
+            <dt> Search engines will display about 50-60 characters of the title, so try not to have titles longer than that</dt> 
+            <dt> Do not use just a list of words as the title (this may reduce the page's position in search results)</dt> 
+            <br>
+            <dt>So, try to make the title as accurate and meaningful as possible!</dt> 
+            
+            <br><dt>Note: You can NOT have more than one &lt;title&gt; element in an HTML document.</dt> 
+        </div>
+    </div>
 
 
     <dl><h4>link</h4></dl>
