@@ -1,0 +1,28 @@
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  body{
+    background-color: #8034eb;
+  }
+  .center{
+    
+    color: #8034eb;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 5px;
+    margin-top: 20px;
+  }
+  #middle{
+    background-color: #ffffff;
+  }
+  p{
+    text-align: flex-start;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  
+  }

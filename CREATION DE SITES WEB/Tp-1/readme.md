@@ -3,3 +3,5 @@ we did an exercise for a html website, i guess i will be working on this for a w
 lmao dude it's october 3rd and im still on the first page
 
 bruh it's october 9th and still haven't progressed on shit lmao
+
+october 18th still havent touched this lol just changed the info for my name
