@@ -1,7 +1,7 @@
 body{
   background-color: #8034eb;
 }
-p{
+#description{
   text-align: center;
   background-color: #ffffff;
   border-radius: 10px;
@@ -27,6 +27,7 @@ p{
   border-spacing: 5px;
   margin-top: 1%;
   margin-bottom: 1%;
+  font-size: large;
 }
 .center a{
   color: inherit;
@@ -47,14 +48,14 @@ p{
 }
 
 .profile-container img, .profile-container-eliminatethisspacetomaketesting-dl{
-    width: 25%; /* Adjust image size as needed */
-    height: 25%;
-    margin-right: 0%; /* Adds space between the image and the text */
-    margin-left: 0%;
-    margin-top:auto;
-    margin-bottom:auto;
+  width: 25%; /* Adjust image size as needed */
+  height: 25%;
+  margin-right: 0%; /* Adds space between the image and the text */
+  margin-left: 0%;
+  margin-top:auto;
+  margin-bottom:auto;
 }
-.profile-container dt{
+.profile-container h1{
   color: #E1D9D1;
   font-weight: bold;
   font-size: 200%; /* Adjust size to your preference */
@@ -69,17 +70,84 @@ p{
 .contactMediaTable{
  margin-left: auto;
  margin-right: auto;
- min-width: 25%;
+ min-width: 15%;
 }
 .contactMediaTable td{
   text-align: center;
 }
 .contactMediaTable img{
-  min-width: 20%;
+  min-width: 40px;
   max-width: 40px;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
+}
+
+.Titre2{
+  background-color: #FFB6C1;
+  border-radius: 20px;
+  max-width: fit-content;
+  font-size: auto;
+  padding-bottom: 0.05%;
+  padding-top:0.05%;
+  padding-left:1%;
+  padding-right: 1%;
+  margin-left: 15%;
+  margin-bottom: 1%;
+  margin-top: 70px;
+}
+.sous-info2{
+  background-color: #FFB6C1;
+  border-radius: 20px;
+  max-width: fit-content;
+  padding: 0.7%;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+
+.Titre3{
+  background-color: #FFF4B6;
+  border-radius: 20px;
+  max-width: fit-content;
+  font-size: auto;
+  padding-bottom: 0.05%;
+  padding-top:0.05%;
+  padding-left:1%;
+  padding-right: 1%;
+  margin-left: 15%;
+  margin-bottom: 1%;
+  margin-top: 70px;
+}
+.sous-info3{
+  background-color: #FFF4B6;
+  border-radius: 20px;
+  max-width: fit-content;
+  padding: 0.7%;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+.Titre4{ 
+  background-color: #B6FFF4;
+  padding: 1%;
+  border-radius: 20px;
+  font-weight: bold; 
+  margin-left: 40px;
+}
+.sous-info4 strong { 
+  background-color: #B6FFF4;
+  padding: 1%;
+  border-radius: 20px;
+  font-weight: bold; 
+}
+
+.sous-info4 p {
+  background-color: #B6FFF4;
+  border-radius: 20px;
+  padding: 1%;
+  font-size: 16px;
+  margin-left: 35px; 
 }
 
 

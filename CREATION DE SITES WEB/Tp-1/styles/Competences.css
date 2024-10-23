@@ -1,0 +1,41 @@
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  body{
+    background-color: #eb3434;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .center{
+    
+    color: #eb3434;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 5px;
+    margin-top: 20px;
+  }
+  #middle{
+    background-color: #ffffff;
+}
+
+.Titre4{ 
+    background-color: #B6FFF4;
+    padding: 1%;
+    border-radius: 20px;
+    font-weight: bold; 
+    margin-left: 40px;
+  }
+  .sous-info4 strong { 
+    background-color: #B6FFF4;
+    padding: 1%;
+    border-radius: 20px;
+    font-weight: bold; 
+  }
+  
+  .sous-info4 p {
+    background-color: #B6FFF4;
+    border-radius: 20px;
+    padding: 1%;
+    font-size: 16px;
+    margin-left: 35px; 
+  }

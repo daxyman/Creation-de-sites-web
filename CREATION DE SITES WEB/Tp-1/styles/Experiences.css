@@ -1,0 +1,43 @@
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  body{
+    background-color: #eb3434;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .center{
+    
+    color: #eb3434;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 5px;
+    margin-top: 20px;
+  }
+  #middle{
+    background-color: #ffffff;
+  }
+  .Titre3{
+    background-color: #FFF4B6;
+    border-radius: 20px;
+    max-width: fit-content;
+    font-size: auto;
+    padding-bottom: 0.05%;
+    padding-top:0.05%;
+    padding-left:1%;
+    padding-right: 1%;
+    margin-left: 15%;
+    margin-bottom: 1%;
+    margin-top: 70px;
+  }
+  .sous-info3{
+    background-color: #FFF4B6;
+    border-radius: 20px;
+    max-width: fit-content;
+    padding: 0.7%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  /*REMOVE THIS AS SOON AS YOU CAN EACH PAGE NEEDS AN INDIVIDUAL CSS*/

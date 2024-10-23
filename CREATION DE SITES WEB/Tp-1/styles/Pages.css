@@ -1,28 +1,52 @@
 a {
-    color: inherit;
-    text-decoration: inherit;
-  }
-  body{
-    background-color: #8034eb;
-  }
-  .center{
-    
-    color: #8034eb;
-    margin-left: auto;
-    margin-right: auto;
-    border-spacing: 5px;
-    margin-top: 20px;
-  }
-  #middle{
-    background-color: #ffffff;
-  }
-  p{
-    text-align: flex-start;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
+  color: inherit;
+  text-decoration: inherit;
+}
+body{
+  background-color: #8034eb;
+}
+.center{
   
-  }
+  color: #8034eb;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 5px;
+  margin-top: 20px;
+}
+#middle{
+  background-color: #ffffff;
+}
+/*p{
+  text-align: flex-start;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 100%;
+  margin-bottom: 40px;
+}*/
+.Titre{
+  background-color: #FFB6C1;
+  border-radius: 20px;
+  max-width: fit-content;
+  padding: 0.7%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.sous-info{
+  background-color: #FFB6C1;
+  border-radius: 20px;
+  max-width: fit-content;
+  padding: 0.7%;
+  margin-bottom: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/*REMOVE THIS AS SOON AS YOU CAN EACH PAGE NEEDS AN INDIVIDUAL CSS*/
