@@ -16,6 +16,15 @@
     let decition = true;//Booleans
     let initial = B;//Chars
     const jour = 2;//constants (aka permanent/final values which can not be changed)
+    var x1 = 5;
+    /*
+            | Feature                   | `var`                                 | `let`                             |
+            |---------------------------|---------------------------------------|-----------------------------------|
+            | Scope                     | Function-scoped                       | Block-scoped                      |
+            | Re-declaration            | Allowed                               | Not allowed                       |
+            | Hoisting                  | Hoisted, initialized to `undefined`   | Hoisted, no initialization (TDZ)  |
+            | Global Object Property    | Yes                                   | No                                |
+    */
     
     //alert will "alert"(literally lol) in a pop up window as text
     alert("Bienvenue!" + prenom);
@@ -332,6 +341,28 @@
         "Second: " + currentDate.getSeconds() + "\n" +
         "Milliseconds: " + currentDate.getMilliseconds());
     
+    //as well as in java we also got conditionals in js
+    if (condition){
+        //bloq de code a executer si la condition est vraie
+    }
+    //example
+    let amount1 = prompt("ho is u broke? lemme check that bank account");
+    if (amount1>10){
+        alert("k man i c u");
+    }else{
+        alert("BROKE MF ALERT, BROKE MF ALERT");
+    }
+    //There's also that ho ahh ternary operator i never understood
+    amount1 >= 25 ?
+    message = "i c u brah":
+    message = "Brokeass";
+    //it basically goes like
+    //(condition) ? (true/if):(false/else)
+
+    //switch is literally the same bs so im not even gonna cover it
+    //for loops are also the same
+    //while too
+
 
 </script>
 </body>
