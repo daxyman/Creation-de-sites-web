@@ -1,0 +1,80 @@
+
+# JavaScript Course 8 Summary
+
+## Error Handling in JavaScript
+JavaScript provides mechanisms to manage and handle errors effectively, ensuring smoother execution and debugging.
+
+### Types of Errors
+1. **Syntax Errors**: Occur when the code does not follow JavaScript syntax rules.
+   - Example:
+     ```javascript
+     console.log("Hello);
+     // Missing closing quote results in a syntax error.
+     ```
+2. **Runtime Errors**: Happen during the execution of code.
+   - Example:
+     ```javascript
+     console.log(nonExistentVariable);
+     // Reference error because the variable is not defined.
+     ```
+3. **Logical Errors**: Errors in the logic of the program.
+   - Example:
+     ```javascript
+     let sum = 5 - 3;
+     console.log(sum); // Intended addition, but used subtraction.
+     ```
+
+### Error Handling Mechanisms
+#### The `try...catch` Statement
+Used to handle runtime errors:
+```javascript
+try {
+    // Code that may throw an error.
+    let result = riskyOperation();
+} catch (error) {
+    // Code to handle the error.
+    console.log("An error occurred:", error.message);
+} finally {
+    // Optional block to execute code after try/catch.
+    console.log("Cleanup code here.");
+}
+```
+
+#### Throwing Errors
+Manually throw an error for specific conditions:
+```javascript
+if (value < 0) {
+    throw new Error("Value must be non-negative.");
+}
+```
+
+### Error Object
+The `Error` object provides detailed information about errors.
+- Properties:
+  - `message`: A description of the error.
+  - `name`: The type of error (e.g., `TypeError`, `ReferenceError`).
+  - `stack`: Stack trace (useful for debugging).
+
+### Debugging Tools
+- **Browser DevTools**: Inspect and debug JavaScript errors in the browser.
+- **Breakpoints**: Pause execution to examine the state of the program.
+- **Logging**: Use `console.log()` to trace values and execution flow.
+
+## Exercises
+1. Write a function `divideNumbers(a, b)` that:
+   - Throws an error if `b` is zero.
+   - Returns the result of `a / b` if valid.
+   - Uses `try...catch` to handle errors.
+
+2. Create a form validation script that:
+   - Throws an error if any required field is empty.
+   - Catches and displays a friendly error message if a field fails validation.
+
+3. Debug the following code:
+   ```javascript
+   function calculateTotal(price, taxRate) {
+       return price * taxRate;
+   }
+   console.log(calculateTotal(100)); // Missing taxRate argument.
+   ```
+
