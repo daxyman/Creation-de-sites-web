@@ -1,9 +1,9 @@
-let books = localStorage.getItem("books") ? localStorage.getItem("books").split(',') : [];
+let books = localStorage.getItem("books") === null || localStorage.getItem("books") === "" ? [] : localStorage.getItem("books").split(',');
 
 function ajouterLivre(){
     let livre = document.getElementById("Titre").value;
     let auteur = document.getElementById("Auteur").value;
-    let book = livre + "par " + auteur;
+    let book = livre + " par " + auteur;
     books.push(book);
     localStorage.setItem("books", books.toString());
     chargerLivres();
@@ -22,10 +22,13 @@ function chargerLivres(){
             supprimerLivres(i);
         })
         // end of delete button section
+        newItem.appendChild(deleteButton)
         liste_livres.appendChild(newItem);
     }
 }
 
-funtion supprimerLivres(i){
-    books.splice(i,1);
+function supprimerLivres(i){
+    books.splice(i,1);//this deletes things in a kinda weird way, look into it
+    localStorage.setItem("book")
+    chargerLivres();
 }
