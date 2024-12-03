@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial scale=1.0">
+        <title>Ou ecrire le javascript</title>
+        <script>alert("CE TEXTE EST AFFICHE DEPUIS L'ELEMENT HEAD") </script>
+</head>
+<body>
+<script>alert("CE TEXTE EST AFFICHE DEPUIS L'ELEMENT BODY") </script>
+<script>//ceci est un commentaire </script>
+<script>
+    //we can declare: 
+    let prenom = "Whales"; //Strings
+    let nombre = 25;//Numbers
+    let decition = true;//Booleans
+    let initial = B;//Chars
+    const jour = 2;//constants (aka permanent/final values which can not be changed)
+    
+    //alert will "alert"(literally lol) in a pop up window as text
+    alert("Bienvenue!" + prenom);
+    //if ever we tried to do this without declaring a name before it will show as undefined
+    alert("Bienvenue!" + sindefinir);//sindefinir is undefined (lol)
+
+    alert(typeof(prenom)); //this will show what kind of variable is whatever we feed it
+
+    Name = prompt("ecrivez votre nom: ") //This will ask the user to input a value and store it
+
+    var resultat = ((25 - 3) % 4) * (4 + 10) % 5; // this will declare the number as the result of the operation i input here
+    alert(resultat); //then display it
+
+    var x = 5;
+    var y = ++x; // the ++x increments x value BEFORE using it's value
+    alert(y);//y is assigned the new x value, which is 6
+    alert(x);//x starts at 5, finishes at 6
+
+    var x = 5;
+    var y = x++; // the x++ increments x value AFTER using it's current value
+    alert(y);//y is assigned the first value of x, which is 5
+    alert(x);//x starts at 5, is incremented to 6 at the end
+    //use the same logic for a x-- or --x
+
+    //there's this things called assignment operators;
+    let x = 5;
+    x += 4; // This is equivalent to x = x + 4.
+    alert(x); // x will now equal 9.
+
+    let x = 5;
+    x -= 3; // This is equivalent to x = x - 3.
+    alert(x); // x will now equal 2.
+    //same thing for *(muliplication), /(division), %(modulo), and **(exponentiation)
+
+    //we also can compare values
+    let result = 2 == "2"; // This will be true because it compares only values.
+    alert(result); // true
+    //therefore we can follow the same logic for others
+    // - `==` checks value only.
+    // - `===` checks value and type (strict equality).
+    // - `!=` checks if values are NOT equal (ignoring type).
+    // - `!==` checks if values or types are NOT equal (strict inequality).
+    // - `<`, `>`, `<=`, `>=` compare the relative values.
+
+    //what would happen if we compare Strings you ask, well it is somewhat complex
+    alert("'Marc' <= 'Alain' = " + ('Marc' <= 'Alain')); //this is a comparison between two names aka Strings
+    //The first character 'M' in 'Marc' has a Unicode value of 77.
+	// The first character 'A' in 'Alain' has a Unicode value of 65.
+	// Since 77 > 65, 'Marc' is not less than or equal to 'Alain'
+    //the comparison 'Marc' <= 'Alain' evaluates to false.
+
+    //if we try to do this:
+    alert("'10' !== 10 = " + ('10' !== 10)); // this would evaluate if ('10' !== 10) basically if 10 is qeual to 10, which it is, therefore this is false
+    
+    //there is this thing called contatenating, basically adding two things together
+    let prenome = "riveria";
+    let wellcum = "Welcome ";
+    alert(prenome += wellcum); //this basically sticks them both together and prints them
+
+    // - Strings and operations on them, including locating a word:
+    // we can use the method indexOf()
+    // this method will locate the index number in the string for the part searched.
+
+    // example:
+    let message1 = "Bienvenue dans le cours Développement Web II"; 
+    //if we search the word cours
+    alert("J'ai trouvé le mot 'cours' à l'index " + message.indexOf("cours")); 
+    //output of this code: 
+    //"cours" is located starting at the 18th position (counting starts at 0).
+    //The browser window will alert "index is 18".
+    //WHY ITS TRUE TO KNOW: The indexes run lines and results well
+    // IF you wrote INDEX on missing information such as "Not existe", it throws error expectedly. for strings control many powerflags.
+
+    // There are many methods for manipulating strings in JavaScript. Here are a few:
+    // 1. toLowerCase() Method:
+    // This method converts all the letters in a string to lowercase.
+    let message = "Bienvenue dans le cours Développement Web II.";
+    alert(message.toLowerCase()); 
+    // Output: "bienvenue dans le cours développement web ii."
+
+    // 2. toUpperCase() Method:
+    // This method converts all the letters in a string to uppercase.
+    alert(message.toUpperCase()); 
+    // Output: "BIENVENUE DANS LE COURS DÉVELOPPEMENT WEB II."
+
+    // 3. charAt() Method:
+    // This method returns the character at a specified index.
+    alert("J'ai trouvé la lettre " + message.charAt(5) + " à l'index 5.");
+    // Output: "J'ai trouvé la lettre e à l'index 5."
+
+    // 4. substring() Method:
+    // This method extracts a portion of the string between two specified indexes.
+    alert("J'ai trouvé la chaîne '" + message.substring(5, 8) + "' entre les index 5 et 8.");
+    // Output: "J'ai trouvé la chaîne 'e d' entre les index 5 et 8."
+
+    // 5. search() Method:
+    // This method works like indexOf() but supports regular expressions.
+    // It returns the position of the first match of the specified string or pattern.
+    alert("J'ai trouvé le mot 'cours' à l'index " + message.search("cours"));
+    // Output: "J'ai trouvé le mot 'cours' à l'index 18."
+
+    // Notes:
+    // - toLowerCase() and toUpperCase() are great for normalizing input for comparison.
+    // - charAt(index) is used to extract a specific character from a string.
+    // - substring(start, end) extracts a portion of the string.
+    // - search() is similar to indexOf() but has added support for patterns and regular expressions.
+
+    // JavaScript provides many methods for string manipulation. Here's a breakdown:
+
+    // 1. The `length` property:
+    // This property returns the number of characters in a string.
+    let message12 = "Le malheur des uns fait le bonheur des autres.";
+    alert("La chaîne \"" + message12 + "\" contient " + message.length + " caractères.");
+    // Output: "La chaîne "Le malheur des uns fait le bonheur des autres." contient 47 caractères."
+
+    // 2. The `match()` method:
+    // This method searches for a specific value in a string. If found, it returns the value; otherwise, it returns `null`.
+    let message0 = "Le chien noir et le chien blanc s’amuse ensemble.";
+    alert(message0.match("chien"));
+    // Output: ["chien"] (the first match of "chien").
+
+    // 3. The `repeat()` method:
+    // This method creates a new string by repeating the original string a specified number of times.
+    let greeting = "Bonjour le monde! ";
+    alert(greeting.repeat(3));
+    // Output: "Bonjour le monde! Bonjour le monde! Bonjour le monde!"
+
+    // 4. The `slice()` method:
+    // This method extracts a part of a string based on start and end indexes. Negative indexes count from the end.
+    let message21 = "Bienvenue dans le cours Développement Web II.";
+    alert(message21.slice(24, -3));
+    // Output: "Développement Web"
+
+    // 5. The `replace()` method:
+    // This method replaces a substring within a string with another substring.
+    let message31 = "Le malheur des uns fait le bonheur des autres.";
+    alert(message31.replace("malheur", "bonheur"));
+    // Output: "Le bonheur des uns fait le bonheur des autres."
+
+    // 6. The `startsWith()` method:
+    // This method checks if a string starts with a specific substring. Returns `true` or `false`.
+    let message4 = "Bonjour le monde!";
+    alert(message4.startsWith("Bon"));
+    // Output: true
+
+    // 7. The `substr()` method:
+    // This method extracts a specified number of characters from a string, starting from a given index.
+    let message5 = "Bonjour le monde!";
+    alert(message5.substr(3, 4));
+    // Output: "jour"
+
+    // 8. The `toString()` method:
+    // Converts a value to a string representation.
+    let message6 = "Bonjour le monde!";
+    alert(message6.toString());
+    // Output: "Bonjour le monde!"
+
+    // 9. The `trim()` method:
+    // Removes whitespace from both ends of a string.
+    let message7 = "   Bonjour le monde!   ";
+    alert("\"" + message7.trim() + "\"");
+    // Output: "Bonjour le monde!"
+
+    // 10. The `endsWith()` method:
+    // Checks if a string ends with a specific substring. Returns `true` or `false`.
+    let message8 = "Ce texte est affiché avec JavaScript depuis l’élément head.";
+    alert(message8.endsWith("head."));
+    // Output: true
+
+    // 11. The `includes()` method:
+    // Checks if a string contains a specific substring. Returns `true` or `false`.
+    alert(message8.includes("head"));
+    // Output: true
+
+
+    // JavaScript provides a set of useful Math and Date functions for various operations. Here's a summary:
+
+    // Math Functions:
+
+    // 1. Math.min()
+    // Returns the smallest value among the given numbers.
+    let val1 = 4.7;
+    let val2 = 10.2;
+    let val3 = 7.5;
+    alert(Math.min(val1, val2, val3));
+    // Output: 4.7
+
+    // 2. Math.max()
+    // Returns the largest value among the given numbers.
+    alert(Math.max(val1, val2, val3));
+    // Output: 10.2
+
+    // 3. Math.round()
+    // Rounds a number to the nearest integer.
+    let num1 = 4.45;
+    let num2 = 7.65;
+    alert(Math.round(num1)); // Output: 4
+    alert(Math.round(num2)); // Output: 8
+
+    // 4. Math.trunc()
+    // Removes the decimal part of a number, returning only the integer part.
+    let num3 = 4.45;
+    alert(Math.trunc(num3));
+    // Output: 4
+
+    // 5. Math.abs()
+    // Returns the absolute value of a number (always positive).
+    let num4 = -25.35;
+    alert(Math.abs(num4));
+    // Output: 25.35
+
+    // 6. Math.ceil()
+    // Rounds a number up to the nearest integer.
+    let num5 = 3.3;
+    alert(Math.ceil(num5));
+    // Output: 4
+
+    // 7. Math.floor()
+    // Rounds a number down to the nearest integer.
+    alert(Math.floor(num5));
+    // Output: 3
+
+    // 8. Math.random()
+    // Generates a random number between 0 (inclusive) and 1 (exclusive).
+    let randomValue = Math.random();
+    alert(randomValue);
+    // Output: A random decimal between 0 and 1.
+
+    // Date Functions:
+
+    // 1. getFullYear()
+    // Retrieves the full year of a date object in a four-digit format.
+    let currentDate = new Date();
+    alert("Nous sommes en : " + currentDate.getFullYear());
+    // Output: Current year (e.g., "Nous sommes en : 2024")
+
+    // 2. getMonth()
+    // Retrieves the month (0-based) of a date object. January is 0, December is 11.
+    alert("Le mois en cours est : " + currentDate.getMonth());
+    // Output: A number representing the current month.
+
+    // 3. Creating a Date object:
+    // We can create a date object using specific parameters or a date string.
+    let specificDate = new Date(1959, 11, 19, 5, 34, 50, 0); // Year, Month (0-based), Day, Hours, Minutes, Seconds, Milliseconds
+    alert(specificDate);
+    // Output: The specified date and time.
+
+    let parsedDate = new Date("December 19, 1958 2:25:10");
+    alert(parsedDate);
+    // Output: The parsed date and time.
+
+    // Let's demonstrate each JavaScript Date method with examples:
+
+    let currentDate1 = new Date(); // Creates a new Date object for the current date and time.
+
+    // Example: getDate()
+    // Retrieves the day of the month (1-31).
+    alert("Current day of the month: " + currentDate.getDate()); 
+    // Output: The current day of the month (e.g., "Current day of the month: 2").
+
+    // Example: getDay()
+    // Retrieves the day of the week (0-6, where 0 is Sunday).
+    alert("Current day of the week: " + currentDate.getDay()); 
+    // Output: The current day of the week (e.g., "Current day of the week: 0").
+
+    // Example: getFullYear()
+    // Retrieves the full year in four digits.
+    alert("Current year: " + currentDate.getFullYear()); 
+    // Output: The current year (e.g., "Current year: 2024").
+
+    // Example: getMonth()
+    // Retrieves the month (0-11, where 0 is January and 11 is December).
+    alert("Current month (0-based): " + currentDate.getMonth()); 
+    // Output: The current month (e.g., "Current month (0-based): 11").
+
+    // Example: getHours()
+    // Retrieves the hour (0-23).
+    alert("Current hour: " + currentDate.getHours()); 
+    // Output: The current hour (e.g., "Current hour: 22").
+
+    // Example: getMinutes()
+    // Retrieves the minutes (0-59).
+    alert("Current minute: " + currentDate.getMinutes()); 
+    // Output: The current minute (e.g., "Current minute: 30").
+
+    // Example: getSeconds()
+    // Retrieves the seconds (0-59).
+    alert("Current second: " + currentDate.getSeconds()); 
+    // Output: The current second (e.g., "Current second: 45").
+
+    // Example: getMilliseconds()
+    // Retrieves the milliseconds (0-999).
+    alert("Current milliseconds: " + currentDate.getMilliseconds()); 
+    // Output: The current milliseconds (e.g., "Current milliseconds: 123").
+
+    // Example: getTime()
+    // Retrieves the number of milliseconds since January 1, 1970.
+    alert("Milliseconds since January 1, 1970: " + currentDate.getTime()); 
+    // Output: The milliseconds since epoch (e.g., "Milliseconds since January 1, 1970: 1730580990000").
+
+    // Example: getTimezoneOffset()
+    // Retrieves the time zone difference in minutes between UTC and the local time.
+    alert("Timezone offset in minutes: " + currentDate.getTimezoneOffset()); 
+    // Output: The time zone offset (e.g., "Timezone offset in minutes: -60").
+
+    // Example Summary:
+    alert("Date summary:\n" +
+        "Day of the month: " + currentDate.getDate() + "\n" +
+        "Day of the week: " + currentDate.getDay() + "\n" +
+        "Year: " + currentDate.getFullYear() + "\n" +
+        "Month: " + currentDate.getMonth() + "\n" +
+        "Hour: " + currentDate.getHours() + "\n" +
+        "Minute: " + currentDate.getMinutes() + "\n" +
+        "Second: " + currentDate.getSeconds() + "\n" +
+        "Milliseconds: " + currentDate.getMilliseconds());
+    
+
+</script>
+</body>
+</html>
