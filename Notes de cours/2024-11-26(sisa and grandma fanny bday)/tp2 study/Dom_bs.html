@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial scale=1.0">
+        <title>Ou ecrire le javascript</title>
+        <script>alert("CE TEXTE EST AFFICHE DEPUIS L'ELEMENT HEAD") </script>
+</head>
+<body>
+<script>
+
+    //using functions
+    // Calling the function with arguments 8 and 7
+    multiplication(8, 7);
+
+    // Declaring the function
+    function multiplication(p1, p2) {
+        // Writes the result directly to the HTML document
+        document.write("Le résultat de " + p1 + " * " + p2 + " = " + (p1 * p2));
+    }
+    // Output on the webpage: "Le résultat de 8 * 7 = 56"
+
+    //pulling this from html
+    // 1. getElementById():
+    // Retrieves an element by its unique `id`.
+    let elementById = document.getElementById("exampleId");
+    console.log(elementById);
+    // Example Explanation:
+    // If an HTML element has `id="exampleId"`, this method will retrieve it. It's often used to target specific elements.
+
+    // 2. getElementsByName():
+    // Retrieves all elements with a specified `name` attribute.
+    let elementsByName = document.getElementsByName("exampleName");
+    console.log(elementsByName);
+    // Example Explanation:
+    // Returns a NodeList of elements with the `name="exampleName"`. Commonly used with form inputs.
+
+    // 3. getElementsByTagName():
+    // Retrieves all elements with a specified tag name.
+    let elementsByTag1 = document.getElementsByTagName("p");
+    console.log(elementsByTag);
+    // Example Explanation:
+    // Retrieves all `<p>` elements in the document. Returns a live HTMLCollection of matching elements.
+
+    // 4. getElementsByClassName():
+    // Retrieves all elements with a specified class name.
+    let elementsByClass1 = document.getElementsByClassName("exampleClass");
+    console.log(elementsByClass);
+    // Example Explanation:
+    // Returns all elements with the `class="exampleClass"`. The result is an HTMLCollection.
+
+    // 5. querySelector():
+    // Retrieves the first element matching a specified CSS selector.
+    let queryElement = document.querySelector(".exampleClass");
+    console.log(queryElement);
+    // Example Explanation:
+    // Retrieves the first element with the class `exampleClass`. Can be used with any CSS selector.
+
+    // 6. querySelectorAll():
+    // Retrieves all elements matching a specified CSS selector.
+    let queryAllElements = document.querySelectorAll(".exampleClass");
+    console.log(queryAllElements);
+    // Example Explanation:
+    // Returns a NodeList of all elements matching `.exampleClass`. Supports complex CSS selectors.
+
+
+    // HTML DOM: Understanding NodeList vs HTMLCollection
+
+    // Both NodeList and HTMLCollection are similar, but with key differences:
+
+    // 1. NodeList
+    // - A collection of nodes from the document. It can include element nodes, text nodes, and attribute nodes.
+    // - Elements can only be accessed by their index number (starting from 0).
+    // - Most NodeLists are static (do not update automatically if the DOM changes).
+    // Example:
+    let nodeList = document.querySelectorAll("p");
+    console.log(nodeList); // Logs a static NodeList of all <p> elements.
+
+    // 2. HTMLCollection
+    // - A collection of **element nodes** from the document.
+    // - Elements can be accessed by their index, name, or `id`.
+    // - HTMLCollection is always dynamic (updates automatically when the DOM changes).
+    // Example:
+    let htmlCollection = document.getElementsByTagName("p");
+    console.log(htmlCollection); // Logs a dynamic HTMLCollection of all <p> elements.
+
+
+    /* Accessing Elements: */
+
+    // Example: Access elements in an HTMLCollection by index or name/id:
+    console.log(htmlCollection[0]); // Accesses the first <p> element.
+    console.log(document.forms["exampleForm"]); // Accesses a form by name or id.
+
+    // Example: Access elements in a NodeList by index:
+    console.log(nodeList[0]); // Accesses the first <p> element in the NodeList.
+
+
+        
+    /* Dynamic vs Static Collections: */
+
+    // Example: Dynamic HTMLCollection:
+    let listItemsCollection = document.getElementsByTagName("li");
+    console.log(listItemsCollection.length); // Logs the number of <li> elements.
+    let ul = document.querySelector("ul");
+    let newLi = document.createElement("li");
+    newLi.textContent = "New Item";
+    ul.appendChild(newLi); // Add a new <li> to the list.
+    console.log(listItemsCollection.length); // The count updates dynamically!
+
+    // Example: Static NodeList:
+    let listItemsNodeList = document.querySelectorAll("li");
+    console.log(listItemsNodeList.length); // Logs the number of <li> elements.
+    ul.appendChild(newLi); // Add a new <li> to the list.
+    console.log(listItemsNodeList.length); // The count does NOT update (static list).
+
+
+    /* Methods and Their Returns: */
+
+    // Methods that return an HTMLCollection (dynamic):
+    let elementsByClass = document.getElementsByClassName("exampleClass");
+    let elementsByTag = document.getElementsByTagName("div");
+
+    // Methods that return a NodeList (static):
+    let nodeListFromQuery = document.querySelectorAll(".exampleClass");
+
+    // Methods that return a NodeList (dynamic):
+    let childNodes = document.body.childNodes;
+    console.log(childNodes); // Includes text, comment, and element nodes.
+
+
+    /* Other Document Properties: */
+
+    // Access specific parts of the document:
+    console.log(document.body); // Logs the <body> element.
+    console.log(document.forms); // Logs all <form> elements.
+    console.log(document.images); // Logs all <img> elements.
+    console.log(document.links); // Logs all <a> elements with an href attribute.
+    console.log(document.title); // Logs the <title> content of the document.
+</script>
+</body>
+</html>
