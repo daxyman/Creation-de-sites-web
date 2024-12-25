@@ -1,0 +1,8 @@
+body{
+    background-color: pink;
+}
+#colorButton{
+    width: fit-content;
+    height: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}

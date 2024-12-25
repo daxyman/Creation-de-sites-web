@@ -1,0 +1,30 @@
+:root{
+    --bg-color: rgb(20, 20, 20);
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+
+
+#cards {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+
+.card {
+    width: fit-content; /* Set your desired width for the card */
+    height: 200px; /* Set your desired height for the card */
+}
+
+.card img {
+    width: 100%; /* Scale the image to the card's width */
+    height: 100%; /* Scale the image to the card's height */
+    object-fit: cover; /* Maintains aspect ratio and fills the card */
+}
