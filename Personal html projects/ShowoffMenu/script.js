@@ -35,3 +35,25 @@ window.onmousemove = e => {
         }, {duration: 12000, fill: "forwards"});
     }
 };
+document.getElementById("image-track").onmousemove = e => {
+    for (const image of document.getElementsByClassName("image")) {
+        const rect = image.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+
+        image.style.setProperty("--mouse-x", `${x}px`);
+        image.style.setProperty("--mouse-y", `${y}px`);
+    }
+}
+
+const blob = document.getElementById("blob");
+
+window.onpointermove = event => {
+    const { clientX, clientY } = event;
+
+    blob.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`
+    }, { duration: 6000, fill: "forwards"});
+}
+document.addEventListener('mousemove', e => console.log(`X: ${e.clientX}, Y: ${e.clientY}`));
