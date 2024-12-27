@@ -85,6 +85,26 @@ z-index: 1;
     position: relative;
     width: calc(100% - 2px);
     z-index: 2;
+    overflow: hidden;
+}
+
+.poker-card{
+    width: 50%;
+    aspect-ratio: 1/1.4;
+    border-radius: 5%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+.poker-card:nth-child(1){
+    background-color: blue;
+    transform: translate(-50%, -50%) rotate(-8deg);
+}
+
+.poker-card:nth-child(2){
+    background-color: aquamarine;
+    transform: translate(-50%, -50%) rotate(-1deg);
 }
 
 #blur{
