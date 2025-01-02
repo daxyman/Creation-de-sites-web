@@ -35,6 +35,7 @@ body {
   width: 200px;
   aspect-ratio: 1/2;
   margin: 5px;
+  font-size: 50px;
 }
 #group {
   display: flex;
